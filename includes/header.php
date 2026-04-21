@@ -1,0 +1,12 @@
+<header>
+    <div id="header">
+        <img id="logo" src="../images/logo500.png" alt="logo">
+        <div id="header-links" class="links">
+            <ul>
+                <li><a href="../pages/index.php">Home</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="../pages/contact.php">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
