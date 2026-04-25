@@ -1,67 +1,103 @@
 * {
-    margin: 0px;
-    border-width: 0px;
-    background-color: #353535;
-    color: #7aa2f7;
+  margin: 0px;
+  border-width: 0px;
+  background-color: #353535;
+  color: #7aa2f7;
 }
+
+/* ## php include Styles ## */
 
 #header,
 #footer {
-    display: flex;
-    justify-content: flex-start;
-    background-color: transparent;
-    padding: 1%;
+  display: flex;
+  justify-content: flex-start;
+  background-color: transparent;
+  padding: 1%;
 }
 
 #logo {
-    width: 4%;
-    height: 4%;
-    margin-left: 1%;
+  width: 4%;
+  height: 4%;
+  margin-left: 1%;
 }
 
 #header-links {
-    width: 75%;
+  width: 75%;
 }
 
 #links * {
-    background-color: #c0caf5;
-    color: #353535;
-}
-
-.main-content * {
-    margin-left: 1%;
+  background-color: #c0caf5;
+  color: #353535;
 }
 
 .links ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    justify-self: center;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  justify-self: center;
 }
 
-.picture-gallery img {
-    height: 40%;
-    width: 40%;
-    display: none;
+/* ## General Styles ## */
+
+.main-content * {
+  margin-left: 1%;
+}
+
+/* ## Picture Gallery Styles ## */
+
+#gallery-header {
+  text-align: center;
+  padding-top: 3%;
 }
 
 .picture-gallery {
-    display: flex;
-    justify-content: center;
-    padding-top: 5%;
-    gap: 5%;
+  display: flex;
+  justify-content: center;
+  padding-top: 3%;
+  gap: 3%;
+}
+
+.picture-gallery figure {
+  display: none;
+}
+
+.picture-gallery img {
+  width: 100%;
+  margin-bottom: 1%;
 }
 
 .picture-gallery button {
-    font-size: 500%;
-    color: #c0caf5;
+  font-size: 500%;
+  color: #c0caf5;
 }
 
 .picture-gallery button:hover {
-    color: #7aa2f7;
+  color: #7aa2f7;
 }
 
+.thumbnail-display {
+  display: flex;
+  justify-content: center;
+  margin: 3% 1% 2%;
+  border: 1px dotted #c0caf5;
+  padding: 0px;
+}
+
+.thumbnail-display img {
+  height: 20%;
+  width: 20%;
+  border: 10px solid transparent;
+  margin-left: 0;
+}
+
+figure.active img,
 img.active {
-    display: block;
-    border: 10px solid #c0caf5;
+  border: 10px solid #c0caf5;
+}
+
+figure.active {
+  display: block;
+  width: 40%;
+  text-align: center;
+  font-weight: bold;
 }

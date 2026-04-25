@@ -1,31 +1,34 @@
-let images, currentIndex;
+let images, thumbnails, currentIndex;
 
-function showSlide(index) {
-    images.forEach((image) => {
-        image.classList.remove("active");
-    });
+function showPicture(index) {
+
+    images[currentIndex].classList.remove("active");
+    thumbnails[currentIndex].classList.remove("active");
+
     images[index].classList.add("active");
+    thumbnails[index].classList.add("active");
     currentIndex = index;
 }
 
 function prevPicture() {
     if (currentIndex <= 0) {
-        showSlide(0);
+        showPicture(0);
     } else {
-        showSlide(currentIndex - 1);
+        showPicture(currentIndex - 1);
     }
 }
 
 function nextPicture() {
     if (currentIndex >= images.length - 1) {
-        showSlide(images.length - 1);
+        showPicture(images.length - 1);
     } else {
-        showSlide(currentIndex + 1);
+        showPicture(currentIndex + 1);
     }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    images = document.querySelectorAll("#picture-gallery img");
+    images = document.querySelectorAll("#picture-gallery figure");
+    thumbnails = document.querySelectorAll("#thumbnail-display img");
     currentIndex = 0;
-    showSlide(0);
+    showPicture(0);
 });
