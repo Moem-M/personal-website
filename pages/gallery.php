@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>Home Page</title>
+    <title>Picture Gallery</title>
     <link rel="stylesheet" type="text/css" href="../global/styles.css" />
     <script src="../scripts/gallery.js"></script>
 </head>
@@ -13,7 +13,7 @@
 
     <div class="main-content" id="galleryPage">
 
-        <h1 id="gallery-header">Formula 1 2026 Teams and their Cars</h1>
+        <h1 id="gallery-header" class="main-header">Formula 1 2026 Teams and their Cars</h1>
 
         <div id="picture-gallery" class="picture-gallery">
             <button type="button" class="buttonPrev" onclick="prevPicture()">&#10094</button>

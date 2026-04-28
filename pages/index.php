@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>Home Page</title>
+    <title>Home Page - Mohammed Moni</title>
     <link rel="stylesheet" type="text/css" href="../global/styles.css" />
 </head>
 
