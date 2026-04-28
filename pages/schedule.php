@@ -4,7 +4,6 @@
 <head>
     <title>F1 2026 Schedule</title>
     <link rel="stylesheet" type="text/css" href="../global/styles.css" />
-    <script src="../scripts/email.js"></script>
 </head>
 
 <body>
