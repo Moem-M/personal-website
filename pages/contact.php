@@ -4,6 +4,7 @@
 <head>
     <title>Contact</title>
     <link rel="stylesheet" type="text/css" href="../global/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../scripts/email.js"></script>
 </head>
 

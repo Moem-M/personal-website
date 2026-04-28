@@ -1,5 +1,4 @@
 * {
-    margin: 0px;
     border-width: 0px;
     background-color: #353535;
     color: #7aa2f7;
@@ -39,22 +38,22 @@
 
 /* ## General Styles ## */
 
-.main-content * {
-    margin-left: 1rem;
+.main-content {
+    padding: 0 1rem;
 }
 
 /* ## Picture Gallery Styles ## */
 
 #gallery-header {
     text-align: center;
-    padding-top: 3rem;
+    padding-top: 1%;
 }
 
 .picture-gallery {
     display: flex;
     justify-content: center;
-    padding-top: 3rem;
-    gap: 3rem;
+    padding-top: 1%;
+    gap: 3%;
 }
 
 .picture-gallery figure {
@@ -62,12 +61,12 @@
 }
 
 .picture-gallery img {
-    width: 50rem;
+    width: 100%;
     margin-bottom: 1rem;
 }
 
 .picture-gallery button {
-    font-size: 5rem;
+    font-size: 300%;
     color: #c0caf5;
 }
 
@@ -78,14 +77,15 @@
 .thumbnail-display {
     display: flex;
     justify-content: center;
-    margin: 3rem 1rem 2rem;
     border: 1px dotted #c0caf5;
     padding: 0px;
+    overflow-x: auto;
+    height: 10%;
 }
 
 .thumbnail-display img {
-    height: 5rem;
-    width: 10rem;
+    width: 100%;
+    min-width: 100px;
     border: 10px solid transparent;
     margin-left: 0;
 }
@@ -97,9 +97,10 @@ img.active {
 
 figure.active {
     display: block;
-    width: 60rem;
+    width: 50%;
     text-align: center;
     font-weight: bold;
+    min-width: 200px;
 }
 
 /* ## F1 Schedule Table Styles ## */
@@ -107,13 +108,13 @@ figure.active {
     margin-top: 2rem;
     display: flex;
     justify-content: center;
+    overflow-x: auto;
 }
 
 #f1-schedule {
-    width: fit-content;
     background-color: #353535;
     color: #7aa2f7;
-    width: 90rem;
+    width: 100%;
 }
 
 #f1-schedule th,
