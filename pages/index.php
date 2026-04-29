@@ -5,6 +5,7 @@
     <title>Home Page - Mohammed Moni</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../global/styles.css" />
+    <link rel="icon" href="../images/logo500.png" />
 </head>
 
 <body>
