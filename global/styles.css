@@ -153,6 +153,17 @@ figure.active {
 }
 
 #resume-pdf {
-    width: 70rem;
-    height: 100rem;
+    width: 85%;
+    height: 70rem;
+}
+
+/* Video Page Styles */
+
+#video-page {
+    text-align: center;
+}
+
+#video-embed {
+    width: 60vw;
+    height: 60vh;
 }
