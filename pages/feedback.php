@@ -61,8 +61,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php include("../includes/header.php"); ?>
     <?php include("../includes/links.php"); ?>
     <div class="main-content" id="feedback-page">
-        <h1>Feedback Form</h1>
-
+        <div id="feedback-heading">
+            <h1>Feedback Form</h1>
+            <?php if (isset($error)) echo "<p class='form-error'>$error</p>"; ?>
+            <?php if (isset($success)) echo "<p>$success</p>"; ?>
+        </div>
         <form name="feedback" id="feedback" action="" method="post">
             <fieldset id="user-information">
                 <legend>Your Information</legend>
@@ -173,8 +176,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <input type="submit" value="Submit" id="form-submit" />
         </form>
-        <?php if (isset($error)) echo "<p class='form-error'>$error</p>"; ?>
-        <?php if (isset($success)) echo "<p>$success</p>"; ?>
+
     </div>
     <?php include("../includes/footer.php"); ?>
 </body>
