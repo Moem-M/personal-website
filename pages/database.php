@@ -13,16 +13,20 @@
     <?php include("../includes/links.php"); ?>
     <div class="main-content">
         <h1>University Courses</h1>
-        <ul>
-        <?php
-        $conn = new mysqli('localhost', 'feedback_user', 'redacted', 'project_db');
-        $result = $conn->query("SELECT courses.title, departments.name FROM courses JOIN departments ON courses.department_id = departments.id");
-        while ($row = $result->fetch_assoc()) {
-            echo "<li>" . $row['title'] . " – " . $row['name'] . "</li>";
-        }
-        $conn->close();
-        ?>
-        </ul>
+        <table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%;">
+            <tr>
+                <th>Course Title</th>
+                <th>Department</th>
+            </tr>
+            <?php
+            $conn = new mysqli('localhost', 'feedback_user', 'redacted', 'project_db');
+            $result = $conn->query("SELECT courses.title, departments.name FROM courses JOIN departments ON courses.department_id = departments.id");
+            while ($row = $result->fetch_assoc()) {
+                echo "<tr><td>" . $row['title'] . "</td><td>" . $row['name'] . "</td></tr>";
+            }
+            $conn->close();
+            ?>
+        </table>
     </div>
     <?php include("../includes/footer.php"); ?>
 </body>
