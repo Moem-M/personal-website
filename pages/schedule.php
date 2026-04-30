@@ -3,7 +3,7 @@
 
 <head>
     <title>F1 2026 Schedule</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../global/styles.css" />
     <link rel="stylesheet" type="text/css" media="print" href="../styles/print.css" />
     <link rel="icon" href="../images/logo500.png" />
