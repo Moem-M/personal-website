@@ -11,13 +11,19 @@
 <body>
     <?php include("../includes/header.php"); ?>
     <?php include("../includes/links.php"); ?>
-    <div class="main-content">
-        <h1>Mohammed Moni</h1>
-        <h2>Computer Science Student</h2>
-        <p>I'm a third-year Computer Science student with a growing interest in backend development and Linux systems.
+    <div class="main-content" id="home-page">
+        <h1>About</h1>
+        <h2>Me</h2>
+        <p>I'm Mohammed Moni, a third-year Computer Science student with a growing interest in backend development and Linux systems.
             While I don't have formal backend experience yet, I've developed a strong foundation through personal Linux use—daily driving it,
             customizing environments, and working comfortably from the command line. I'm actively looking for a summer internship
             where I can learn from real-world codebases and contribute meaningfully.</p>
+
+        <h2>This Website</h2>
+        <p>This site was my final project for CPCS 403. The requirements: PHP includes on every page, valid XHTML Strict and CSS,
+            a picture gallery with JS thumbnails, a table with print CSS, a feedback form with validation and database (no duplicate emails),
+            inline PDF resume, scrambled email contact page, WordPress blog subdomain, and a page showing two related MySQL tables.
+            Everything is deployed on an Ubuntu VPS with NGINX.</p>
     </div>
     <?php include("../includes/footer.php"); ?>
 </body>

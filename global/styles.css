@@ -1,11 +1,21 @@
 * {
-    border-width: 0px;
-    color: #7aa2f7;
-    box-sizing: border-box;
+  border-width: 0px;
+  color: #7aa2f7;
+  box-sizing: border-box;
+  font-family: "Mononoki", monospace;
+  line-height: 1.5;
 }
 
 html {
-    background-color: #353535;
+  background-color: #353535;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: revert;
 }
 
 /* ## php include Styles ## */
@@ -13,261 +23,281 @@ html {
 #header,
 #footer,
 #links {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: transparent;
 }
 
 #logo {
-    min-width: 50px;
-    min-height: 50px;
-    width: 3%;
-    height: 3%;
-    margin-left: 3%;
+  min-width: 50px;
+  min-height: 50px;
+  width: 3%;
+  height: 3%;
+  margin-left: 3%;
 }
 
 #header-links {
-    width: 100%;
+  width: 100%;
 }
 
 #links * {
-    background-color: #c0caf5;
-    color: #353535;
+  background-color: #c0caf5;
+  color: #353535;
 }
 
 .links ul {
-    list-style: none;
-    flex-wrap: wrap;
-    gap: 1rem;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding: 0.5% 1%;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 1rem;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0.5% 1%;
+}
+
+#footer {
+  justify-content: right;
+  margin-top: 2rem;
 }
 
 /* ## General Styles ## */
 
 .main-content {
-    padding: 0 1rem;
+  padding: 0 1rem;
+}
+
+.main-content h2 {
+  margin-top: 1.5rem;
+}
+
+/* Home Page Styles */
+
+#home-page,
+#contact-page {
+  width: 40%;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 /* ## Picture Gallery Styles ## */
 
 #gallery-header {
-    font-size: 150%;
-    text-align: center;
+  font-size: 150%;
+  text-align: center;
 }
 
 .picture-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 0.5%;
+  display: flex;
+  justify-content: center;
+  gap: 0.5%;
 }
 
 .picture-gallery figure {
-    display: none;
+  display: none;
 }
 
 .picture-gallery img {
-    width: 100%;
-    margin-bottom: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 .picture-gallery button {
-    font-size: 300%;
-    color: #c0caf5;
-    background-color: #353535;
+  font-size: 300%;
+  color: #c0caf5;
+  background-color: #353535;
 }
 
 .picture-gallery button:hover {
-    color: #7aa2f7;
+  color: #7aa2f7;
 }
 
 .thumbnail-display {
-    display: flex;
-    justify-content: start;
-    border: 1px dotted #c0caf5;
-    padding: 0px;
-    overflow-x: auto;
-    height: 10%;
+  display: flex;
+  justify-content: start;
+  border: 1px dotted #c0caf5;
+  padding: 0px;
+  overflow-x: auto;
+  height: 10%;
 }
 
 .thumbnail-display img {
-    width: 100%;
-    min-width: 130px;
-    border: 10px solid transparent;
-    margin-left: 0;
+  width: 100%;
+  min-width: 130px;
+  border: 10px solid transparent;
+  margin-left: 0;
 }
 
 figure.active img,
 img.active {
-    border: 10px solid #c0caf5;
+  border: 10px solid #c0caf5;
 }
 
 figure.active {
-    display: block;
-    width: 50%;
-    text-align: center;
-    font-weight: bold;
-    min-width: 220px;
+  display: block;
+  width: 50%;
+  text-align: center;
+  font-weight: bold;
+  min-width: 220px;
 }
 
 /* ## F1 Schedule Table Styles ## */
 #schedule-div {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: start;
-    overflow-x: auto;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: start;
+  overflow-x: auto;
 }
 
 #f1-schedule {
-    background-color: #353535;
-    color: #7aa2f7;
-    width: 100%;
-    min-width: 750px;
+  background-color: #353535;
+  color: #7aa2f7;
+  width: 100%;
+  min-width: 750px;
 }
 
 #f1-schedule th,
 #f1-schedule td {
-    border: 1px solid #c0caf5;
-    padding: 6px;
-    background-color: #353535;
-    color: #7aa2f7;
+  border: 1px solid #c0caf5;
+  padding: 6px;
+  background-color: #353535;
+  color: #7aa2f7;
 }
 
 #f1-schedule th,
 #schedule-title-row th {
-    background-color: #2a2a2a;
-    color: #c0caf5;
-    text-align: center;
+  background-color: #2a2a2a;
+  color: #c0caf5;
+  text-align: center;
 }
 
 #schedule-title-row th {
-    font-size: larger;
+  font-size: larger;
 }
 
 /* Resume Page Styles */
 
 #resume-page {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 #resume-pdf {
-    width: 85%;
-    height: 70rem;
+  width: 85%;
+  height: 70rem;
 }
 
 /* Video Page Styles */
 
 #video-page {
-    text-align: center;
+  text-align: center;
 }
 
 #video-embed {
-    width: 60vw;
-    height: 60vh;
+  width: 60vw;
+  height: 60vh;
 }
 
 /* Projects Page Styles */
 
 #projects-header {
-    text-align: center;
+  text-align: center;
 }
 
 #project-deck {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .project-card {
-    background-color: grey;
-    border: 3px solid #7aa2f7;
-    width: 35vw;
-    height: 30vh;
-    border-radius: 10%;
-    overflow-y: auto;
-    padding: 0.5% 1%;
+  background-color: #2a2a2a;
+  border: 3px solid #7aa2f7;
+  width: 35vw;
+  height: auto;
+  border-radius: 10%;
+  overflow-y: auto;
+  padding: 0.5% 1%;
 }
 
 .project-card-title {
-    text-align: center;
+  text-align: center;
 }
 
 .project-image {
-    width: 80%;
+  width: auto;
+  max-height: 30vh;
+  margin: 1rem 5%;
 }
 
 .project-card ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 /* Feedback Form Styles */
 
 #feedback-heading {
-    text-align: center;
+  text-align: center;
 }
 
 #mandatory-marker {
-    color: #f7768e;
+  color: #f7768e;
 }
 
 #feedback {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #feedback fieldset {
-    border: 1px solid #c0caf5;
-    padding: 3vw 3vh;
-    margin-bottom: 3vh;
-    width: 35%;
+  border: 1px solid #c0caf5;
+  padding: 3vw 3vh;
+  margin-bottom: 3vh;
+  width: 35%;
 }
 
 #feedback legend {
-    color: #c0caf5;
+  color: #c0caf5;
 }
 
 .form-row {
-    display: flex;
-    align-items: center;
-    margin-bottom: 3%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3%;
 }
 
 #feedback label {
-    width: 50%;
-    color: #c0caf5;
+  width: 50%;
+  color: #c0caf5;
 }
 
 .form-row input,
 .form-row select,
 .form-row textarea {
-    background-color: #2a2a2a;
-    border: 1px solid #c0caf5;
-    padding: 1%;
-    width: 60%;
+  background-color: #2a2a2a;
+  border: 1px solid #c0caf5;
+  padding: 1%;
+  width: 60%;
 }
 
 .form-option {
-    margin: 0.5% 2%;
+  margin: 0.5% 2%;
 }
 
 #form-submit {
-    background-color: #c0caf5;
-    color: #353535;
-    padding: 6px 20px;
-    margin-top: 10px;
+  background-color: #c0caf5;
+  color: #353535;
+  padding: 6px 20px;
+  margin-top: 10px;
 }
 
 .form-error {
-    color: #f7768e;
-    font-size: 0.8rem;
-    margin-top: 0.2rem;
-    display: block;
+  color: #f7768e;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+  display: block;
 }
