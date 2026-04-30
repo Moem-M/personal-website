@@ -205,3 +205,69 @@ figure.active {
 .project-card ul {
     list-style-type: none;
 }
+
+/* Feedback Form Styles */
+
+#feedback-page h1 {
+    text-align: center;
+}
+
+#mandatory-marker {
+    color: #f7768e;
+}
+
+#feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#feedback fieldset {
+    border: 1px solid #c0caf5;
+    padding: 3vw 3vh;
+    margin-bottom: 3vh;
+    width: 35%;
+}
+
+#feedback legend {
+    color: #c0caf5;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+#feedback label {
+    width: 50%;
+    color: #c0caf5;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+    background-color: #2a2a2a;
+    border: 1px solid #c0caf5;
+    padding: 1%;
+    width: 60%;
+}
+
+.form-option {
+    margin: 0.5% 2%;
+}
+
+#form-submit {
+    background-color: #c0caf5;
+    color: #353535;
+    padding: 6px 20px;
+    margin-top: 10px;
+}
+
+.form-error {
+    color: #f7768e;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+    display: block;
+}
