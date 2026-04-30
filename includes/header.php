@@ -5,6 +5,7 @@
             <ul>
                 <li><a href="../pages/index.php">Home</a></li>
                 <li><a href="https://blog.moem.cloud">Blog</a></li>
+                <li><a href="../pages/projects.php">Projects</a></li>
                 <li><a href="../pages/contact.php">Contact</a></li>
             </ul>
         </div>
