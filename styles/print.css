@@ -1,0 +1,12 @@
+html, body, .main-content, #schedule-div,
+#f1-schedule, #f1-schedule tbody, #f1-schedule tr,
+#f1-schedule th, #f1-schedule td,
+#f1-schedule colgroup, #f1-schedule col {
+    all: revert;
+}
+
+* {
+    display: none;
+    background-color: white !important;
+    color: black;
+}
