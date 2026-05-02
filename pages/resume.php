@@ -12,7 +12,7 @@
     <?php include("../includes/header.php"); ?>
     <?php include("../includes/links.php"); ?>
     <div class="main-content" id="resume-page">
-        <object id="resume-pdf" data=""></object>
+        <object id="resume-pdf" data="../files/resume.pdf"></object>
     </div>
     <?php include("../includes/footer.php"); ?>
 </body>

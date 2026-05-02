@@ -12,7 +12,7 @@
     <?php include("../includes/header.php"); ?>
     <?php include("../includes/links.php"); ?>
     <div class="main-content" id="video-page">
-        <object id="video-embed" data=""></object>
+        <object id="video-embed" data="https://www.youtube.com/embed/nqye02H_H6I?si=SSO8hJUc0pgoNPJu"></object>
     </div>
     <?php include("../includes/footer.php"); ?>
 </body>
