@@ -301,3 +301,14 @@ figure.active {
   margin-top: 0.2rem;
   display: block;
 }
+
+/* Database Page Styles */
+#courses-table {
+    width: 100%;
+}
+
+#courses-table th,
+#courses-table td {
+    border: 1px solid #c0caf5;
+    text-align: left;
+}
