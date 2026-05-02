@@ -13,7 +13,7 @@
     <?php include("../includes/links.php"); ?>
     <div class="main-content">
         <h1>University Courses</h1>
-        <table>
+        <table id="courses-table">
             <tr>
                 <th>Course Title</th>
                 <th>Department</th>
